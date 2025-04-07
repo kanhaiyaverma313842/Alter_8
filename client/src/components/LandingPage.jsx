@@ -16,7 +16,7 @@ function LandingPage() {
     e.preventDefault();
     setLoading(true);
 
-    const sheetURL = "https://script.google.com/macros/s/AKfycbwF0QHENvJZ994g4nDwqRBccpEXYpkZAG7WVvdAqe8mOA3N5dTmnnoNHSrMzJHgtnMCaQ/exec";
+    const sheetURL = "https://script.google.com/macros/s/AKfycbyhur3Xb2z3hqNr1-g297QZdPLCAB9wJuDfxU4O_LRamWeQMd9WcSCQRpl41jTORBYT5g/exec";
 
     fetch(sheetURL, {
       method: "POST",
