@@ -16,7 +16,7 @@ function LandingPage() {
     e.preventDefault();
     setLoading(true);
 
-    const sheetURL = import.meta.env.VITE_NEXT_PUBLIC_GOOGLE_SHEET;
+    const sheetURL = "https://script.google.com/macros/s/AKfycbwF0QHENvJZ994g4nDwqRBccpEXYpkZAG7WVvdAqe8mOA3N5dTmnnoNHSrMzJHgtnMCaQ/exec";
 
     fetch(sheetURL, {
       method: "POST",
