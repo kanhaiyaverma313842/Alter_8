@@ -1,17 +1,21 @@
 import { useState } from "react";
 import bg_img from "../assets/bg-2.jpg"; 
 import icon from "../assets/logo.png"
+import { Link } from "react-router-dom";
 
 function LandingPage() {
   return (
     <div
-      className="relative min-h-screen min-w-screen bg-cover bg-center flex items-center justify-center"
+      className="relative min-h-screen min-w-screen bg-cover bg-center flex flex-col items-center justify-center"
       style={{ backgroundImage: `url(${bg_img})` }}
     >
       <div className="absolute backdrop-blur-sm inset-0 bg-black/40"></div>
       <div className="bg-white/30 rounded-sm absolute top-0 left-0 m-4"> 
          <img src={icon} className="w-full h-12 "/>
          </div>
+         <div className="absolute top-0 right-0 mr-4 mt-7 p-1 bg-white/30 w-fit z-40 flex items-center justify-center ">
+     <Link to="/privacy-policy" className=" underline text-blue-800 font-semibold">Privacy Policy</Link>
+     </div>
       {/* Content over the image */}
       <div className="p-4 md:p-8 max-w-5xl text-center z-20 mt-16">
         
@@ -39,11 +43,16 @@ function LandingPage() {
             Join Waitlist
           </div>
         </form>
+       
         {/* <div className="text-base text-white  font-sans self-stretch text-center mt-4">
             Are you an agent? <a href="#" className="text-yellow-500 underline"><span  className="text-blue-500 underline">Join here</span></a>
           </div> */}
+         
       </div>
+
+      
     </div>
+    
   );
 }
 
