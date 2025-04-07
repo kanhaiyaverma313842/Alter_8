@@ -1,13 +1,12 @@
 import React from 'react';
-import { createPortal } from 'react-dom';
 
 function Modal({ isOpen, onClose, children }) {
   if (!isOpen) return null;
 
   // The element where we'll portal our modal
-  const modalRoot = document.getElementById('modal-root');
+ 
 
-  return createPortal(
+  return (
     // Overlay backdrop
     <div
       className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
@@ -28,8 +27,8 @@ function Modal({ isOpen, onClose, children }) {
 
         {children}
       </div>
-    </div>,
-    modalRoot
+    </div>
+
   );
 }
 
