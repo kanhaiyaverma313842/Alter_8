@@ -17,10 +17,10 @@ function App() {
         
       
         <h1 className=" font-montserrat text-2xl md:text-4xl font-bold mb-6 text-white/90">
-        Join the Waitlist <br/><span className="text-4xl md:text-6xl text-white ">Your Property Could Be Earning More.</span> 
+        Join the Waitlist <br/><span className="text-4xl md:text-6xl text-white ">Your Property Deserves Better Care and an Upgrade.</span> 
         </h1>
         <p className="mb-6 text-white font-hav font-mono">
-        We're inviting a limited group of landlords to list on our new platform before launch.<br/> Don’t miss out on first-mover benefits!
+        We are inviting a limited group of landlords for a revolutionary property management service. management platform.<br/> Be the first to join us!
         </p>
         <form  className="flex flex-col md:flex-row w-full gap-3 px-0 md:px-36">
           
