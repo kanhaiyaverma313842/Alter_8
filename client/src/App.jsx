@@ -11,7 +11,7 @@ function App() {
    <Routes>
 
     <Route exact path="/" element={<LandingPage/>}/>
-    <Route path="privacy-policy" element={<PrivacyPolicy/>}/>
+    <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
    </Routes>
    
    
